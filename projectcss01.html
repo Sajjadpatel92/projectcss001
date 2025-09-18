@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Grocery Super Market</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+      * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+    }
+
+    .main {
+      width: 750px;
+      margin: 0px auto;
+      padding: 0px 0px;
+      background: #fff;
+      border: 2px solid #141414;
+    }
+
+    /* Header */
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #e2e2e2;
+      padding: 15px;
+      border-radius: 5px;
+     
+    }
+
+    .head p {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .span {
+      font-size: 14px;
+      font-weight: bold;
+      color: #777;
+    }
+
+    .head input {
+      margin-top: 10px;
+      padding: 8px 12px;
+      width: 280px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+
+    .logo {
+      height: 100px;
+      width: 100px;
+      /* margin-left: 20px; */
+    }
+
+    /* Top list */
+    .list {
+      display: flex;
+      margin: 20px 0;
+      padding: 10px;
+      font-size: 13px;
+      
+    }
+    .list2{
+        margin-left: 400px;
+    }
+
+    .list select {
+      margin-left: 10px;
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid #bbb;
+      font-size: 10px;
+    }
+
+    /* Product grid */
+    
+       .box1 {
+      display: flex;
+      
+      gap: 15px;
+      padding: 20px;
+    }
+    .img1 {
+    
+      padding: 10px;
+      border-radius: 5px;
+      height: 200px;
+      border: 1px solid #ddd;
+      background: #fff;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px;
+      position: relative;
+    }
+
+    .img1 img {
+      height: 110px;
+      width: auto;
+      margin: 10px auto;
+      display: block;
+    }
+
+    /* Badges */
+    .stext, .stext1 {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 3px 6px;
+      font-size: 12px;
+      border-radius: 3px;
+      color: #fff;
+    }
+
+    .stext {
+      background: red;
+    }
+
+    .stext1 {
+      background: green;
+      top: 35px;
+    }
+
+    .text1 {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .text2 {
+      font-size: 12px;
+      color: gray;
+    }
+
+    .checked {
+      color: orange;
+    }
+    .stext3{
+      position: absolute;
+      right: 10px;
+      padding: 3px 6px;
+      font-size: 12px;
+      border-radius: 3px;
+      color: #fff;
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+
+    <!-- HEADER -->
+    <div class="head">
+      <div class="left">
+        <p>
+          E-Grocery Super Market <br>
+          <span class="span">Whenever the Occasion, we’ve got you covered</span><br>
+        </p>
+        <div>
+          <input type="text" placeholder="Search E-Grocery Super Market">
+        </div>
+      </div>
+      <img class="logo" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/supermarket-logo-design-template-78917b1e696887b11a9012a133e26755_screen.jpg" alt="Super Market Logo">
+    </div>
+
+    <!-- FILTER -->
+    <div class="list">
+      <span>26 Products Found</span>
+      <div class="list2">
+        <select>
+          <option>Page: 1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <select>
+          <option>Sort by: Featured</option>
+          <option>Price</option>
+          <option>Item</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- PRODUCTS 1 -->
+    <div class="box1">
+
+      <div class="img1">
+        <span class="stext">Sale</span>
+        <span class="stext1">10%</span>
+        <img src="https://m.media-amazon.com/images/I/9166IHTX1WL._UF1000,1000_QL80_.jpg" alt="">
+        <span class="text1">Haldiram's Bhujia Sev</span><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><br>
+        <span class="text2">$21.06 <del>$24.00</del> </span>
+        <span class="stext3">+Add</span>
+        
+      </div>
+
+      <div class="img1">
+        <img src="https://www.jiomart.com/images/product/original/490750744/britannia-nutrichoice-essentials-oat-cookies-150-g-product-images-o490750744-p590033115-0-202407151802.jpg" alt="">
+        <span class="text1">Britannia NutriChoice</span><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><br>
+        <span class="text2">$24.00 <del>$24.00</del></span>
+        <span class="stext3">+Add</span>
+      </div>
+
+      <div class="img1">
+        <span class="stext">Buy 1 Get $4 Off</span>
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR5ZIh48tSu0gQWtB8vzB7zRuYSdOZAb_ajWqaVhWg3HWTY3Ngrv-MbHTLvF_URV8zKxyfKRtaD_xxpYPyq_5sktaCvBBuoVLnk5HysCtTpNjrtpd-SA6xc" alt="">
+        <span class="text1">Five Star Home Pack</span><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><br>
+        <span class="text2">$35.00 <del>$35.00</del></span>
+        <span class="stext3">+Add</span>
+      </div>
+
+      <div class="img1">
+        <span class="stext">Sale</span>
+        <span class="stext1">40%</span>
+        <img src="https://m.media-amazon.com/images/I/711vAJ8fWlL.jpg" alt="">
+        <span class="text1">Lay's Potato Chips</span><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><br>
+        <span class="text2">$3.00 <del>$5.00</del></span>
+        <span class="stext3">+Add</span>
+      </div>
+ </div>
+
+<!-- PRODUCTS 3 -->
+    <div class="box1">
+
+      <div class="img1">
+        <span class="stext">Sale</span>
+        <span class="stext1">10%</span>
+        <img src="https://m.media-amazon.com/images/I/9166IHTX1WL._UF1000,1000_QL80_.jpg" alt="">
+        <span class="text1">Haldiram's Bhujia Sev</span><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><br>
+        <span class="text2">$21.06 <del>$24.00</del></span>
+        <span class="stext3">+Add</span>
+      </div>
+
+      <div class="img1">
+        <img src="https://www.jiomart.com/images/product/original/490750744/britannia-nutrichoice-essentials-oat-cookies-150-g-product-images-o490750744-p590033115-0-202407151802.jpg" alt="">
+        <span class="text1">Britannia NutriChoice</span><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><br>
+        <span class="text2">$24.00 <del>$24.00</del></span>
+        <span class="stext3">+Add</span>
+      </div>
+
+      <div class="img1">
+        <span class="stext">Buy 1 Get $4 Off</span>
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR5ZIh48tSu0gQWtB8vzB7zRuYSdOZAb_ajWqaVhWg3HWTY3Ngrv-MbHTLvF_URV8zKxyfKRtaD_xxpYPyq_5sktaCvBBuoVLnk5HysCtTpNjrtpd-SA6xc" alt="">
+        <span class="text1">Five Star Home Pack</span><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><br>
+        <span class="text2">$35.00 <del>$35.00</del></span>
+        <span class="stext3">+Add</span>
+      </div>
+
+      <div class="img1">
+        <span class="stext">Sale</span>
+        <span class="stext1">40%</span>
+        <img src="https://m.media-amazon.com/images/I/711vAJ8fWlL.jpg" alt="">
+        <span class="text1">Lay's Potato Chips</span><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><br>
+        <span class="text2">$3.00 <del>$5.00</del></span>
+        <span class="stext3">+Add</span>
+      </div>
+</div>
+
+<!-- PRODUCTS 3 -->
+    <div class="box1">
+
+      <div class="img1">
+        <span class="stext">Sale</span>
+        <span class="stext1">10%</span>
+        <img src="https://m.media-amazon.com/images/I/9166IHTX1WL._UF1000,1000_QL80_.jpg" alt="">
+        <span class="text1">Haldiram's Bhujia Sev</span><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><br>
+        <span class="text2">$21.06 <del>$24.00</del></span>
+        <span class="stext3">+Add</span>
+      </div>
+
+
+  <div class="img1">
+        <span class="stext">Buy 1 Get $4 Off</span>
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR5ZIh48tSu0gQWtB8vzB7zRuYSdOZAb_ajWqaVhWg3HWTY3Ngrv-MbHTLvF_URV8zKxyfKRtaD_xxpYPyq_5sktaCvBBuoVLnk5HysCtTpNjrtpd-SA6xc" alt="">
+        <span class="text1">Five Star Home Pack</span><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><br>
+        <span class="text2">$35.00 <del>$35.00</del></span>
+        <span class="stext3">+Add</span>
+      </div>
+
+
+
+
+      <div class="img1">
+        <img src="https://www.jiomart.com/images/product/original/490750744/britannia-nutrichoice-essentials-oat-cookies-150-g-product-images-o490750744-p590033115-0-202407151802.jpg" alt="">
+        <span class="text1">Britannia NutriChoice</span><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><br>
+        <span class="text2">$24.00 <del>$24.00</del></span>
+        <span class="stext3">+Add</span>
+      </div>
+
+    
+
+      <div class="img1">
+        <span class="stext">Sale</span>
+        <span class="stext1">40%</span>
+        <img src="https://m.media-amazon.com/images/I/711vAJ8fWlL.jpg" alt="">
+        <span class="text1">Lay's Potato Chips</span><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><br>
+        <span class="text2">$3.00 <del>$5.00</del></span>
+        <span class="stext3">+Add</span>
+      </div>
+
+</div>
+<!-- PRODUCTS 4 -->
+    <div class="box1">
+
+      <div class="img1">
+        <span class="stext">Sale</span>
+        <span class="stext1">10%</span>
+        <img src="https://m.media-amazon.com/images/I/9166IHTX1WL._UF1000,1000_QL80_.jpg" alt="">
+        <span class="text1">Haldiram's Bhujia Sev</span><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><br>
+        <span class="text2">$21.06 <del>$24.00</del></span>
+        <span class="stext3">+Add</span>
+      </div>
+
+      <div class="img1">
+        <img src="https://www.jiomart.com/images/product/original/490750744/britannia-nutrichoice-essentials-oat-cookies-150-g-product-images-o490750744-p590033115-0-202407151802.jpg" alt="">
+        <span class="text1">Britannia NutriChoice</span><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><br>
+        <span class="text2">$24.00 <del>$24.00</del></span>
+        <span class="stext3">+Add</span>
+      </div>
+
+
+
+   
+  </div>
+</body>
+</html>
